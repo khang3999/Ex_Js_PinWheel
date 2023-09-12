@@ -1,0 +1,61 @@
+.sharingan {
+    width: 200px;
+    height: 200px;
+    border: 2px solid coral;
+    border-radius: 50%;
+    position: relative;
+    background: url(public/image/download-removebg-preview.png);
+    background-size: cover;
+}
+.active{
+    animation: xoay 0.2s linear infinite;
+
+}
+@keyframes xoay {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* .hand {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hand-sec::before {
+    content: '';
+    background-color: red;
+    position: absolute;
+    width: 4px;
+    top: 40px;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hand-min::before {
+    content: '';
+    background-color: blue;
+    position: absolute;
+    width: 6px;
+    top: 60px;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hand-hour::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 8px;
+    top: 100px;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+} */

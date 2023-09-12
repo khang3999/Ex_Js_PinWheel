@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <div class="sharingan">
+        </div>
+        
+        <div class="sharingan">
+        </div>
+
+    </div>
+    <button>
+        Start
+    </button>
+
+    <script>  
+        const btn = document.querySelector("button");
+        
+        const sharingan = document.querySelectorAll(".sharingan");
+        
+
+
+        // Dung annimation
+        // btn.addEventListener("click", function () {
+        //     let h = setTimeout(function hhh() {
+                
+        //     })
+
+        //     sharingan.forEach(e => {
+        //         e.classList.toggle("active");
+
+        //     });
+        //     if (btn.textContent === "Stop") {
+        //         btn.textContent = "Start";
+        //     }
+        //     else {
+        //         btn.textContent = "Stop";
+        //     }
+            
+        // });
+
+
+
+        // Dung JS
+        let t = setTimeout(function setAction(){
+            sharinganNode.style.transform += `rotate(20deg)`;
+            t = setTimeout(setAction, 100);          
+        }, 100);
+
+        
+        // const handSec = document.querySelector('.hand-sec');
+        // const handMin = document.querySelector('.hand-min');
+        // const handHour = document.querySelector('.hand-hour');
+
+
+        // const dd = new Date();
+        // let a = dd.getSeconds() * 6;
+        // handSec.style.transform = `rotate(${a}deg)`;
+        // let b = dd.getMinutes() * 6 + dd.getSeconds() * 6.0 / 60;
+        // handMin.style.transform = `rotate(${b}deg)`;
+        // let c = dd.getHours() * 30.0 + (dd.getMinutes() * 30.0 / 60);
+        // handHour.style.transform = `rotate(${c}deg)`;
+
+        // let s = setTimeout(function setTime(){
+        //     let d = new Date();
+
+        //     // Set hand second
+        //     let rsSec = d.getSeconds() * 6;
+        //     handSec.style.transform = `rotate(${rsSec}deg)`;
+
+        //     // Set hand minute
+        //     let rsMin = d.getMinutes() * 6.0 + d.getSeconds() * 6.0 / 60;
+        //     handMin.style.transform = `rotate(${rsMin}deg)`;
+        //     console.log(d.getMinutes() * 6.0 / 60);
+        //     // Set hand hour
+        //     let rsHour = d.getHours() * 30.0 +  d.getMinutes() * 30.0 / 60;
+        //     handHour.style.transform = `rotate(${rsHour}deg)`;
+
+        //     s = setTimeout(setTime, 1000);
+        // }, 1000);
+
+        // let m = setTimeout(function setMin(){
+        //     let d = new Date();
+        //     let rs = d.getMinutes() * 6;
+        //     handMin.style.transform = `rotate(${rs}deg)`;
+        //     s = setTimeout(setMin, 3600);
+        //     console.log(d.getMinutes() * 6);
+        // }, 3600);
+
+        // let h = setTimeout(function setHour(){
+        //     let d = new Date();
+        //     let rs = d.getHours() * 30;
+        //     handHour.style.transform = `rotate(${rs}deg)`;
+        //     s = setTimeout(setHour, hourToSec);
+        //     console.log(d.getHours() * 6);
+        // }, hourToSec);
+    </script>
+</body>
+</html>
